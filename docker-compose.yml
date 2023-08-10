@@ -1,0 +1,22 @@
+version: "3"
+services:
+  php:
+    container_name: "agenda-contato-php"
+    image: php:8.1.16-apache
+    volumes:
+      - ./code:/var/www/html/
+    ports:
+      - 8083:80
+  db:
+    image: mariadb:10.5
+    container_name: "agenda-contato-maraidb"
+    restart: always
+    environment:
+      - MARIADB_USER=root
+      - MARIADB_ROOT_PASSWORD=123  
+  adminer:
+    image: adminer:4.8.1
+    container_name: "agenda-contato-adminer"
+    restart: always
+    ports:
+      - 83:8080

@@ -1,0 +1,43 @@
+.bg_popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;    
+    top: 0;
+    left: 0;
+    background-color: #0000008e;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+.janela_popup { 
+    color: white;
+    width: 25%;
+    height: 50vh;
+    padding:50px 50px 30px 120px;
+    background-color: rgba(0, 0, 0, 0.774);
+    box-shadow: #000000;    
+    border-radius: 20px;
+}
+.bg_popup.open_popup {
+    display: flex;
+}
+.visualizacao {
+    border: #000000;
+    border-style: solid;
+    width: 80vw;
+    height: 85vh;
+    margin: 0px 0px 0px 300px;
+    padding: 10px;
+}
+.esquerda {
+
+}
+.body {
+    color: rgba(255, 72, 0, 0.884);
+    background: #000000e1;
+}
+.btn_orange {
+    background: rgba(255, 72, 0, 0.884)
+}
